@@ -1,6 +1,6 @@
 :root{
     --color-base:#FFF2CC;
-    --color-amarillo:#FFD966;
+    --color-amarillo:#ffcf66;
     --color-semi:#F4B183;
     --color-oscuro:#DFA67B;
     --color-text: #492d17;
@@ -44,9 +44,21 @@ a{
 a:hover{
     color: white;
 }
+.line{
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0 2rem 0;
+}
+hr{
+    text-align: center;
+    width: 25rem;
+    border: 1px dotted var(--color-oscuro);
+}
 nav hr{
+    width:0rem;
     border: 1px solid var(--color-oscuro);
 }
+
 h1{
     font-size: 3rem;
     color: var(--color-text);
@@ -88,7 +100,6 @@ header{
     border-radius: 2rem;
 }
 .land img{
-    display: flex;
     height: 60vh;
     width: 65vh;
     border: 3px solid var(--color-oscuro);
@@ -109,7 +120,7 @@ footer{
     background-color: rgba(255,217,102,0.5);
     color: var(--color-text);
     border: 2px solid var(--color-oscuro);
-    margin-bottom: 2rem;
+    margin:4rem 0 2rem 0;
 
 }
 footer:hover{
@@ -127,7 +138,7 @@ footer p{
 .land .about {
     border-radius: 325px;
     height: 50vh;
-    width: 50vh;
+    width: 25vw;
 }
 .land p{
     font-size: 1.5rem;
@@ -140,7 +151,7 @@ footer p{
 }
 /*-----Para contact -----*/
 #cont-main{
-    padding: 3rem 10rem 10rem 10rem;
+    padding: 3rem 10rem 3rem 10rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -162,4 +173,55 @@ footer p{
     display: flex;
     justify-content: space-between;
     
+}
+/* ---- Para Informacion ----- */
+#info-main{
+    display: flex;
+    justify-content: center;
+    padding: 4rem;
+}
+table,th,tr,td{
+    color: var(--color-text);
+    border: 2px dotted var(--color-text) ;
+    border-collapse: collapse;
+    font-size: 2rem;
+    background-color: rgba(255,217,102,0.1);
+    padding: 3rem 1rem 3rem 1rem;
+}
+table{
+    border: 3rem solid;
+}
+table:hover{
+    background-color: rgba(255,217,102,0.8);
+}
+/* ----Para Tips----- */
+#bnt-main{
+    padding: 2rem 10rem 3rem 10rem;
+}
+li{
+    padding: 0 0 0 3rem;
+    font-size: 1.5rem;
+}
+.land-bnt{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 3rem 0 3rem 0;
+    width: 90%;
+    margin-top: 10vh;
+    background-color: rgba(244,177,131,0.5);
+    border: 5px dotted rgba(244,177,131,0.773546918767507);
+    border-radius: 2rem;
+}
+.land-bnt img{
+    height: 45vh;
+    width: 23vw;
+}
+.land .land-bnt:nth-child(2){
+    margin-bottom:5rem;
+}
+ol li{
+    height: auto;
+    width: 30vw;
 }
